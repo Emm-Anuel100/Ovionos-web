@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="stylesheet" href="./styles-landing/globals.css" />
+  <link rel="stylesheet" href="./styles-landing/styleguide.css" />
+
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ovionos is a leading technology company specializing in innovative software solutions, web development, mobile app development, and IT consulting. Unlock your business potential with Ovionos." />
+  <meta name="keywords" content="Ovionos, technology, software solutions, web development, mobile app development, IT consulting, innovative tech, tech company" />
+  <meta name="author" content="Ovionos" />
+  <meta property="og:title" content="Ovionos - Innovative Technology Solutions" />
+  <meta property="og:description" content="Explore cutting-edge technology services with Ovionos. We offer software solutions, web development, mobile app development, and IT consulting to drive your business forward." />
+  <meta property="og:image" content="https://www.ovionos.com/og-image.jpg" />
+  <meta property="og:url" content="https://www.ovionos.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ovionos - Leading Technology Solutions" />
+  <meta name="twitter:description" content="Ovionos offers top-tier software solutions, web development, and mobile app development services. Partner with us for your IT consulting needs." />
+  <meta name="twitter:image" content="https://www.ovionos.com/twitter-image.jpg" />
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+
+  <!-- Title -->
+  <title>Ovionos | Contact Us</title>
+
+  <!-- Fav-icon -->
+  <link rel="shortcut icon" href="./img/ict.png" type="image/png">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+ <!--header section -->
+ <header>
+  <a href="./index.html">
+    <img src="img/layer-x0020-1.png" alt="logo" class="logo">
+  </a>
+
+   <i class="fas fa-bars" onclick=handle_menu();></i>
+   <nav class="nav">
+    <a href="./index.html">Home</a> <br>
+    <a href="./services.html">Services</a> <br>
+    <a href="./industries.html">Partnership</a> <br>
+    <a href="./company.html">Company</a> <br>
+    <a href="javascript:void();" onclick=toggle_section_nav();>Resources <i class="fas fa-chevron-down"></i></a> 
+    
+    <div class="section-nav"> <div class="pointer"></div>
+      <a href="./blog-page.html">Blog</a>
+      <a href="./faq.html">FAQ</a>
+    </div>
+    <br>
+    <a href="./contact.html" class="contact-btn">Contact Us</a>
+   </nav>
+   <img src="./img/vector-11.svg" alt="img" class="vector">
+</header>
+ <!--/ header section -->
+
+
+<!-- contact hero -->
+ <section class="contact-hero">
+  <h1 class="contact-txt">Contact us</h1>
+ </section>
+<!--/ contact hero -->
+
+<!-- get in touch section -->
+ <section class="get-in-touch">
+  <div class="contact-con-left">
+    <h1 class="txt">Get in touch</h1>
+
+    <form action="" method="post">
+      <fieldset class="flex-field-con">
+        <input type="text" name="" id="" required placeholder="Firstname">
+         <input type="text" name="" id="" required placeholder="Lastname">
+      </fieldset>
+      <fieldset>
+        <input type="email" name="" id="email" required placeholder="E-mail address">
+      </fieldset>
+      <fieldset>
+        <textarea name="" id="" required placeholder="Leave a message"></textarea>
+      </fieldset>
+      <fieldset>
+        <button type="submit">
+          Leave a message
+        </button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="contact-con-right">
+    <!-- contact image goes here in styles -->
+  </div>
+ </section>
+<!--/ get in touch section -->
+
+
+<!-- address -->
+<section class="address">
+  <div class="contacts-wrap">
+    <div class="contact">
+      <img src="./img/whatsapp_icon.svg" alt="whatsapp icon">
+      <h2 class="contact-title">Whatsapp</h2>
+      <h3 class="detail">+2349131822863</h3>
+    </div>
+
+    <div class="contact">
+      <img src="./img/email_icon.svg" alt="email icon">
+      <h2 class="contact-title">E-mail</h2>
+      <h3 class="detail">info@ovionos.com</h3>
+    </div>
+
+    <div class="contact">
+      <img src="./img/address.png" alt="address marker">
+      <h2 class="contact-title">Address</h2>
+      <h3 class="detail">69 Kirikiri Rd, Apapa 102241, Lagos</h3>
+    </div>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.013978913982!2d3.333906110714836!3d6.446985754556427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b897ae69621ef%3A0x47aac96e38c0bbcc!2sKirikiri%20Rd%2C%20Apapa%2C%20Ajeromi%2FIfelodun%20102103%2C%20Lagos!5e1!3m2!1sen!2sng!4v1725644523324!5m2!1sen!2sng" width="510" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<!--/ address -->
+
+
+ <!-- Our client -->
+ <div class="client-wrap">
+  <h2>Our Client</h2> <br/><br/>
+  <img src="/img/frame-118.svg" alt="our client logos" class="client-logos">
+</div>
+<!-- <img src="/img/vector-9.svg" alt="vector" class="diamond-footer"> -->
+<!--/ Our client-->
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-wrap">
+   <div class="sec">
+     <img src="img/vector.svg" alt="logo"> <br><br>
+     <h4 class="title">We design, build and modernize software applications</h4> <br><br>
+     <div class="social">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+     </div>
+   </div>
+
+   <div class="sec">
+    <h4 class="header">Services</h4> <br>
+
+    <a href="#">Custom software development</a>
+    <a href="#">Mobile applicaion development</a>
+    <a href="#">Web application development</a>
+    <a href="#">Data analysis and science</a>
+    <a href="#">Product managemnt</a>
+    <a href="#">Digital marketing</a>
+  </div>
+
+  <div class="sec">
+    <h4 class="header">Industries</h4> <br>
+
+    <a href="#">Public sector</a>
+    <a href="#">Financial sector</a>
+    <a href="#">Agriculture</a>
+    <a href="#">E-commerce</a>
+    <a href="#">Information technology</a>
+  </div>
+
+  <div class="sec">
+    <h4 class="header">Company</h4> <br>
+
+    <a href="#">About us</a>
+    <a href="#">Meet the team</a>
+    <a href="#">Career</a>
+  </div>
+
+  <div class="sec">
+    <h4 class="header">Resources</h4> <br>
+
+    <a href="#">Blog</a>
+    <a href="#">FAQs</a>
+    <a href="#">Career</a>
+  </div>
+
+  <div class="sec">
+    <h4 class="header border">Get in touch</h4> <br>
+
+    <a href="tel:+2349131822863">+2349131822863</a>
+    <a href="mailto:info@ovionos.com">info@Ovionos.com</a>
+  </div>
+  </div>
+
+ <!-- copyright infor. --> 
+ <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Ovionos Ventures Limited - All rights reserved.</p>
+ <!--/ copyright infor. --> 
+</footer>
+<!--/ footer -->
+
+ <script src="./js/script.js"></script>
+</body>
+</html>

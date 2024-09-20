@@ -1,0 +1,319 @@
+
+
+body{
+   background: #eefaff !important;
+   min-height: 100vh;
+   overflow-y: hidden !important;
+}
+
+/** hero section  **/
+section.hero{
+   height: 500px;
+   overflow-y: visible;
+   width: 100%;
+   padding: 2rem;
+   background: url(../img-services/rectangle-46.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 22% 89%, 0 100%, 0 0);
+
+   @media (max-width: 800px){
+      height: 450px;
+      clip-path: none;
+   }
+
+   .hero-txt{
+      text-transform: uppercase;
+      font-size: 20px;
+      position: relative;
+      margin-top: 120px;
+      text-align: center;
+      color: #eee;
+      font-family: "PolySans-Slim", Helvetica;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: normal;
+
+      @media(max-width: 800px){
+         font-size: 16px;
+      }
+   }
+
+   /** title-2 **/
+   h2{
+      font-family: "PolySans-Bulky", Helvetica;
+      font-weight: 400;
+      position: relative;
+      top: 30px;
+      color: var(--white);
+      font-size: 40px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+
+      @media (max-width: 800px){
+         font-size: 30.2px;
+         width: 100%;
+      }
+   }
+
+}
+
+  /* vector icon inn header*/
+  img.vector-diamond{
+   position: absolute;
+   top: 32rem;
+   left: 30px;
+
+   @media (max-width: 800px){
+      height: 70px;
+      top: 30rem;
+   }
+}
+
+/** absolute container **/
+
+section.con-absolute{
+   height: auto;
+
+   /* position: absolute; */
+   /* bottom: -760px; */
+
+}
+
+/* services wrapper  **/
+div.service{
+   width: 100%;
+   padding: 3rem 12.4%;
+   /* position: relative; */
+   /* padding: 3rem 6.4%;
+   height: auto;
+
+   position: absolute;
+   bottom: -760px; */
+
+   @media (max-width: 1400px){
+      padding: 3rem 7.4% !important;
+   }
+}
+
+div.wrap-service{
+   background: #fff;
+   border-radius: 2rem;
+   /* height: auto; */
+   display: flex;
+   /* justify-content: space-between; */
+   /* flex-wrap: wrap; */
+   align-items: center;
+   gap: 1.3rem;
+   padding: 2rem 2.2rem;
+
+   @media (max-width: 1000px){
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   img{
+      height: 20rem;
+      width: 26rem;
+      
+      /* @media(max-width: 800px){
+         object-fit: cover;
+      } */
+   }
+
+   img.section-vector{
+      position: relative;
+      height: 4rem;
+      right: 90%;
+      top: -2rem;
+      object-fit: contain !important;
+   }
+}
+
+div.wrap-reverse{
+   flex-direction: row-reverse;
+}
+
+
+div.service-detail{
+   width: 62%;
+   position: relative;
+   /* top: 3rem; */
+
+   h1{
+    font-family: "PolySans-Bulky", Helvetica;
+    font-weight: 400;
+    color: #263238;
+    font-size: 34px;
+    letter-spacing: 0;
+    line-height: normal;
+
+    @media (max-width: 800px){
+      font-size: 30px;
+    }
+   }
+
+   h2{
+      font-family: "Helvetica-Regular", Helvetica;
+      font-weight: 400;
+      display: flex;
+      color: #515151;
+      font-size: 18x;
+      margin: 1.3rem 0;
+      /* width: 80%; */
+      letter-spacing: 0;
+      line-height: 30px;
+   }
+
+   @media (max-width: 1000px){
+      width: 100%;
+      top: 3rem;
+   }
+}
+
+div.item-wrapper{
+   display: flex;
+   width: 30rem;
+   gap: 1rem;
+   /* width: 34rem; */
+   flex-wrap: wrap;
+   /* width: 59rem; */
+
+   @media (max-width: 1200px){
+      width: 100%;
+      margin-bottom: 3rem;
+   }
+}
+
+div.item{
+   display: flex;
+   gap: 10px;
+
+      .box{
+         background-color: #6a0dad;
+         border-radius: 1.24px;
+         height: 10px;
+         width: 10px;
+         transform: rotate(-45deg);
+     }
+
+    div{
+    font-family: "Helvetica-Bold", Helvetica;
+    font-weight: 700;
+    color: #515151;
+    font-size: 16px;
+    letter-spacing: 0;
+    /* width: 300px; */
+   }
+}
+
+section.hint{
+   width: 100%;
+   height: auto;
+   background: url(../img-services/frame-287.png);
+
+   @media (max-width: 900px){
+      background-size: cover;
+   }
+}
+
+div.txt-wrapper{
+   position: relative;
+   top: 3rem;
+   display: flex;
+   justify-content: center;
+   padding: 3rem 0 8rem 0;
+
+   .txts{
+      font-size: 35px;
+      color: #515151;
+      font-weight: 600;
+      width: 40%;
+      text-align: center;
+      line-height: 48px;
+      font-family: "Helvetica-Bold", Helvetica;
+
+      @media (max-width: 800px){
+         font-size: 38px;
+         width: 80%;
+      }
+   }
+
+   .txt-h2{
+      line-height: 30px;
+      font-weight: 200;
+      color: #181717;
+      margin-top: 1rem;;
+      font-size: 24px;
+   }
+
+   div.btns{
+      display: flex;
+      /* flex-wrap: wrap; */
+      gap: 1.2rem;
+      position: relative;
+      margin-top: 80px;
+      justify-content: center;
+
+      @media (max-width: 1500px){
+         flex-wrap: wrap;
+      }
+
+      a{
+         font-size: 15px;
+         margin: 0 1px;
+         padding: 7px 1.8rem;
+         border-radius:.5rem;
+         font-weight: 900;
+      }
+
+      a.btn-x1{
+         background: #6a0dad;
+      }
+
+      a.btn-x2{
+         background: transparent;
+         border: 1.1px solid #6a0dad;
+         color: #6a0dad;
+      }
+   }
+}
+
+
+/** client section starts here **/
+section.clients{
+   
+   h1{
+      text-align: center;
+      font-family: var(--ovionos-major-headlines-font-family);
+      color: var(--ovionos-grey);
+      font-size: 42px;
+      margin: 3rem 0;
+      font-weight: var(--ovionos-major-headlines-font-weight);
+      letter-spacing: var(--ovionos-major-headlines-letter-spacing);
+      line-height: var(--ovionos-major-headlines-line-height);
+      font-style: var(--ovionos-major-headlines-font-style);
+
+      @media (max-width: 800px){
+         font-size: 35px;
+         margin: 3rem 0 1rem 0;
+      }
+   }
+
+   /** clients logos section **/
+div.logos-con{
+   display: flex;
+   justify-content: center;
+
+   img.logos{
+      height: 3rem;
+      margin-bottom: 3px;
+
+      @media (max-width: 800px){
+         height: 1.8rem;
+      }
+   }
+ }
+}

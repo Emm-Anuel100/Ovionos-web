@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="stylesheet" href="./styles-landing/globals.css" />
+  <link rel="stylesheet" href="./styles-landing/styleguide.css" />
+
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ovionos is a leading technology company specializing in innovative software solutions, web development, mobile app development, and IT consulting. Unlock your business potential with Ovionos." />
+  <meta name="keywords" content="Ovionos, technology, software solutions, web development, mobile app development, IT consulting, innovative tech, tech company" />
+  <meta name="author" content="Ovionos" />
+  <meta property="og:title" content="Ovionos - Innovative Technology Solutions" />
+  <meta property="og:description" content="Explore cutting-edge technology services with Ovionos. We offer software solutions, web development, mobile app development, and IT consulting to drive your business forward." />
+  <meta property="og:image" content="https://www.ovionos.com/og-image.jpg" />
+  <meta property="og:url" content="https://www.ovionos.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ovionos - Leading Technology Solutions" />
+  <meta name="twitter:description" content="Ovionos offers top-tier software solutions, web development, and mobile app development services. Partner with us for your IT consulting needs." />
+  <meta name="twitter:image" content="https://www.ovionos.com/twitter-image.jpg" />
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles/blog-page.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <!-- <link rel="stylesheet" href="./styles/contact.css"> -->
+
+  <!-- Title -->
+  <title>Ovionos | Blogs</title>
+
+  <!-- Fav-icon -->
+  <link rel="shortcut icon" href="./img/ict.png" type="image/png">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+ <!--header section -->
+ <header>
+  <a href="./index.html">
+    <img src="img/layer-x0020-1.png" alt="logo" class="logo">
+  </a>
+
+   <i class="fas fa-bars" onclick=handle_menu();></i>
+   <nav class="nav">
+    <a href="./index.html">Home</a> <br>
+    <a href="./services.html">Services</a> <br>
+    <a href="./industries.html">Partnership</a> <br>
+    <a href="./company.html">Company</a> <br>
+    <a href="javascript:void();" onclick=toggle_section_nav();>Resources <i class="fas fa-chevron-down"></i></a> 
+    
+    <div class="section-nav"> <div class="pointer"></div>
+      <a href="./blog-page.html">Blog</a>
+      <a href="./faq.html">FAQ</a>
+    </div>
+    <br>
+    <a href="./contact.html" class="contact-btn">Contact Us</a>
+   </nav>
+   <img src="./img/vector-11.svg" alt="img" class="vector">
+</header>
+
+<!-- blog landing hero section -->
+ <section class="blog-landing-hero">
+  <h1 class="blog-title">Our blog</h1>
+  <h3 class="sub-title">Catch all the latest news and gossips in the tech industry.</h3>
+ </section>
+ <!--/ blog landing  hero section  -->
+
+ <!-- flex blog story -->
+  <section class="flex-story">
+    <div class="story-wrapper">
+      <div class="element-text">
+        <h1>Why tech matters</h1>
+        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</h3>
+
+        <div class="element-bottom">
+          <h4 class="date">January 30 2024</h4>
+          <a href="./blog-article.html" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- blog story image -->
+      <img src="./img/blog_story_image.png" alt="blog-story" class="blog-story-img">
+       <!--/ blog story iamge -->
+    </div>
+  </section>
+  <!-- flex blog story -->
+
+  <!-- blog cards -->
+  <section class="blog-cards">
+    <div class="card-blog">
+      <img src="./img/web development hacks.png" alt="blog image" class="blog-card-img">
+
+      <div class="con-blog-detail">
+        <h2 class="blog-title">Web Development hacks</h2>
+        <h3 class="blog-card-detail">It is a long established fact that a reader will be distracted by 
+          the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</h3>
+
+          <div class="card-element-bottom">
+            <h4 class="date">May 20th 2024</h4>
+            <a href="" class="read-more">Read more</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="card-blog">
+      <img src="./img/collaborative learning.png" alt="blog image" class="blog-card-img">
+
+      <div class="con-blog-detail">
+        <h2 class="blog-title">Collaborative learning</h2>
+        <h3 class="blog-card-detail">It is a long established fact that a reader will be distracted by 
+          the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</h3>
+
+          <div class="card-element-bottom">
+            <h4 class="date">May 20th 2024</h4>
+            <a href="" class="read-more">Read more</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="card-blog">
+      <img src="./img/why you should choose ovionos.png" alt="blog image" class="blog-card-img">
+
+      <div class="con-blog-detail">
+        <h2 class="blog-title">why you should chose Ovionos</h2>
+        <h3 class="blog-card-detail">It is a long established fact that a reader will be distracted by 
+          the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</h3>
+
+          <div class="card-element-bottom">
+            <h4 class="date">May 20th 2024</h4>
+            <a href="" class="read-more">Read more</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!--/ blog cards -->
+
+
+  <!-- AI Blog section -->
+ <section class="flex-story ai-blog">
+  <div class="story-wrapper">
+    <div class="element-text">
+      <h1>Ai role in digitization</h1>
+      <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution...</h3>
+
+      <div class="element-bottom">
+        <h4 class="date">May 20</h4>
+        <a href="" class="read-more">Read more</a>
+      </div>
+    </div>
+
+    <!-- blog story image -->
+    <img src="./img/ai role in digitization.png" alt="blog-story" class="blog-story-img">
+     <!--/ blog story iamge -->
+  </div>
+
+<!-- see more wrapper -->
+<div class="see-more-bg-con">
+  <a href="" class="see-more-bg">See more 
+    <i class="fas fa-arrow-circle-down"></i>
+  </a>
+</div>
+<!--/ see more wrapper -->
+</section>
+<!-- AI Blog section -->
+
+<!-- our client -->
+<h1 class="our-client-title">
+  Our clients
+</h1> <br />
+<!--/ our client -->
+
+<!-- client logos -->
+<div class="client-logo-wrapper">
+  <img src="img/frame-118.svg" alt="client logos" class="client-logo">
+</div>
+<!--/ client logs -->
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-wrap">
+     <div class="sec">
+     <img src="img/vector.svg" alt="logo"> <br><br>
+     <h4 class="title">We design, build and modernize software applications</h4> <br><br>
+     <div class="social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+     </div>
+     </div>
+
+     <div class="sec">
+     <h4 class="header">Services</h4> <br>
+
+     <a href="#">Custom software development</a>
+     <a href="#">Mobile applicaion development</a>
+     <a href="#">Web application development</a>
+     <a href="#">Data analysis and science</a>
+     <a href="#">Product managemnt</a>
+     <a href="#">Digital marketing</a>
+  </div>
+
+  <div class="sec">
+     <h4 class="header">Industries</h4> <br>
+
+     <a href="#">Public sector</a>
+     <a href="#">Financial sector</a>
+     <a href="#">Agriculture</a>
+     <a href="#">Ecommerce</a>
+     <a href="#">Information technology</a>
+  </div>
+
+  <div class="sec">
+     <h4 class="header">Company</h4> <br>
+
+     <a href="#">About us</a>
+     <a href="#">Meet the team</a>
+     <a href="#">Career</a>
+  </div>
+
+  <div class="sec">
+     <h4 class="header">Resources</h4> <br>
+
+     <a href="#">Blog</a>
+     <a href="#">FAQs</a>
+     <a href="#">Career</a>
+  </div>
+
+  <div class="sec">
+     <h4 class="header border">Get in touch</h4> <br>
+
+     <a href="tel:+2349131822863">+2349131822863</a>
+     <a href="mailto:info@ovionos.com">info@Ovionos.com</a>
+  </div>
+  </div>
+
+  <!-- copyright infor. --> 
+  <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Ovionos Ventures Limited - All rights reserved.</p>
+  <!--/ copyright infor. --> 
+</footer>
+<!--/ footer -->
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>

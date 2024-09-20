@@ -1,0 +1,223 @@
+
+
+section.article-wrapper{
+   height: auto;
+   background: #fff;
+   width: 100%;
+   padding: 2.5rem 5%;
+
+
+   img.blog-header-img{
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      border-radius: .3rem;
+
+      @media (max-width: 900px){
+         height: 20rem;
+      }
+   }
+
+
+   /*** blog detail title **/
+   h1.blog-detail-title{
+      color: #2D3748;
+      font-family: Inter;
+      font-size: 36px;
+      font-style: normal;
+      margin: 2rem 6%;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (max-width: 900px){
+         font-size: 29px;
+      }
+   }
+
+   /* blog author and date **/
+   div.author-date{
+      display: flex;
+      margin-left: 6%;
+      gap: 18px;
+
+      h4.author{
+         color: #2D3748;
+         font-family: "Inter", sans-serif;
+         font-size: 14.4px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+      }
+
+      h3.date{
+         color: var(--600, #718096);
+         font-family: "Inter", sans-serif;
+         font-size: 14.2px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+      }
+   }
+
+   /** main blog article  **/
+   div.article-writeup{
+      margin-top: 2.6rem;
+      margin-left: 6%;
+      width: 80%;
+      color: #32363d;
+      font-family: "Alef", sans-serif;
+      font-size: 15.1px;
+      padding-top: 12px;
+      border-top: 2.4px solid #d3d1d1;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24.767px; /* 131.25% */
+
+      b{
+         font-weight: 800;
+      }
+
+      img.back-to-top{
+         position: absolute;
+         margin-top: -13rem;
+         margin-left: 75%;
+      }
+   }
+
+
+ /** blog cards section **/
+ section.blog-cards{
+   position: relative;
+   margin-top: 4.6rem;
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   padding: 10px 0;
+
+   @media (max-width: 900px){
+      flex-wrap: wrap;
+      padding: 10px 2%;
+      gap: 1.5rem;
+   }
+
+   /** individual blog cards **/
+   div.card-blog{
+      border-radius: 6.246px;
+      background: #FFF;
+      width: 23rem;
+      box-shadow: 0px 4.997px 4.997px 0px #c0bdbd40;
+
+      @media (max-width: 900px){
+         width: 90%;
+      }
+
+      img.blog-card-img{
+         border-radius: .5rem;
+         width: 100%;
+      }
+
+  div.con-blog-detail{
+   margin-top: 1.5rem;
+   /** padding top, right/left and bottom **/
+   padding: 0 20px 20px; 
+
+   h2.blog-title{
+      color: #2D3748;
+      font-family: "Alef", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (max-width: 800px){
+         font-size: 16px;
+      }
+   }
+
+   /** blog card detail **/
+   h3.blog-card-detail{
+      color: #718096;
+      font-family: "Alef", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      margin-top: 12px;
+      font-weight: 400;
+      line-height: 21px; 
+
+      @media (max-width: 800px){
+         font-size: 13px;
+      }
+   }
+
+   /**card element bottom  **/
+   div.card-element-bottom{
+      position: relative;
+      margin-top: 1.3rem;
+      display: flex;
+      gap: 1.7rem;
+      justify-content: space-between;
+
+      @media (max-width: 900px){
+         justify-content: flex-start;
+      }
+
+      h4.date{
+         color: #718096;
+         font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-size: 12.99px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+      }
+
+      a.read-more{
+         color: #2D3748;
+         font-family: "Inter", sans-serif;
+         font-optical-sizing: auto;
+         font-size: 12.99px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+      }
+   }
+   }
+  }
+ }
+}
+
+/** our client **/
+h1.our-client-title{
+   color: #696969;
+   font-family: var(--ovionos-major-headlines-font-family);
+   font-weight: var(--ovionos-major-headlines-font-weight);
+   font-size: 42px;
+   margin-top: 3rem;
+   text-align: center;
+   letter-spacing: var(--ovionos-major-headlines-letter-spacing);
+   line-height: var(--ovionos-major-headlines-line-height);
+   font-style: var(--ovionos-major-headlines-font-style);
+
+   @media (max-width: 800px){
+      font-size: 32px;
+   }
+}
+
+/** client logo section **/
+div.client-logo-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 8%;
+
+   img.client-logo{
+      width: 60%;
+      height: 3.6rem;
+      margin-top: 25px;
+
+      @media (max-width: 800px){
+         width: 100%;
+         height: 2.9rem !important;
+      }
+   }
+ }
