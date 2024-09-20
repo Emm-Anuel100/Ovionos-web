@@ -1,0 +1,151 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+
+header{
+   background: transparent !important;
+   position: relative;
+   bottom: -10px;
+
+   @media (max-width: 800px){
+      background: #4f0088 !important;
+      bottom: 0;
+   }
+}
+
+section.hero{
+   /* z-index: 999; */
+   margin-top: -93px !important;
+   height: 450px !important;
+   background: url(../img/faq_hero_image.png) !important;
+   clip-path: none !important;
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   padding: 2rem 22%;
+
+   @media (max-width: 800px){
+      padding: 2rem 2%;
+   }
+
+   .hero-txt{
+      font-family: "PolySans-Slim", Helvetica;
+
+      @media(max-width: 800px){
+         font-size: 15.6px;
+      }
+   }
+
+   @media (max-width: 800px){
+    height: 300px;
+   }  
+
+   /** title-2 **/
+   h2{
+      font-family: "Alef", sans-serif;
+      font-weight: 600;
+      margin-top: 185px;
+      font-style: normal;
+      position: relative;
+      text-transform: capitalize;
+      top: 10px;
+      color: var(--white);
+      font-size: 35px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+
+      @media (max-width: 800px){
+         font-size: 30.2px;
+         width: 100%;
+      }
+   }
+}
+
+/** Faq section */
+section.faq-sec{
+   width: 100%;
+   padding: 3rem 8%;
+   background: #f3fbff;
+
+   /** Vector blue image **/
+   img.vector-img{
+      position: relative;
+      height: 5rem;
+      z-index: 1;
+      /* margin-bottom: 20px; */
+   }
+
+   /** Faq box **/
+   div.faq-box{
+      background: #fff;
+      z-index: 115;
+      padding: 1.6rem 3%;
+      display: flex;
+      align-items: center;
+      border-radius: .3rem;
+      margin-bottom: 20px;
+      border: 2px solid #e4e0e0;
+      justify-content: space-between;
+
+      h4.faq-title{
+         color: #374151;
+         font-family: "Alef", sans-serif;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 700;
+         width: 40%;
+         line-height: normal;
+
+         @media (max-width: 900px){
+            font-size: 16px;
+            width: 80%;
+         }
+      }
+
+      /** drop down image **/
+      img.drop-down-img{
+         height: 1.4rem;
+         cursor: pointer;
+      }
+   }
+}
+
+
+
+
+/** our client **/
+h1.our-client-title{
+   color: #696969;
+   font-family: var(--ovionos-major-headlines-font-family);
+   font-weight: var(--ovionos-major-headlines-font-weight);
+   font-size: 42px;
+   margin-top: 3rem;
+   text-align: center;
+   letter-spacing: var(--ovionos-major-headlines-letter-spacing);
+   line-height: var(--ovionos-major-headlines-line-height);
+   font-style: var(--ovionos-major-headlines-font-style);
+
+   @media (max-width: 800px){
+      font-size: 32px;
+   }
+}
+
+/** client logo section **/
+div.client-logo-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 8%;
+
+   img.client-logo{
+      width: 60%;
+      height: 3.6rem;
+      margin-top: 25px;
+
+      @media (max-width: 800px){
+         width: 100%;
+         height: 2.9rem !important;
+      }
+   }
+ }

@@ -1,0 +1,244 @@
+
+body{
+   background: #e5fff6;
+
+   ::placeholder{
+      color: #8086a7;
+   }
+
+   header {
+      /* background: #4f1596 !important; */
+      background: #4f1596 !important;
+   }
+
+.contact-hero{
+   position: relative;;
+   background: url(../img/contact_us_hero_image.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 380px;
+   padding: 8rem 4%;
+   width: 100%;
+
+   h1.contact-txt{
+      color: #fff;
+      font-family: "Alef", sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      text-transform: capitalize;
+      font-weight: 700;
+      line-height: normal;
+
+   }
+}
+
+
+/** get in touch section ***/
+section.get-in-touch{
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: first-baseline;
+   gap: 2rem;
+   padding-left: 15vw;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+   @media (max-width: 1400px){
+      gap: 3rem;
+      padding-left: 5%;
+   }
+
+
+   div.contact-con-left{
+      position: relative;
+      top: 5rem;
+
+      @media (max-width: 1100px){
+         top: 1.2rem;
+      }
+
+      form{
+         position: relative;
+         top: 1rem;
+         display: grid;
+         grid-template-columns: 1fr;
+         width: 140%;
+
+         @media (max-width: 1200px){
+            width: 110%;
+         }
+
+         @media (max-width: 1100px){
+            width: 90vw;
+         }
+
+         fieldset{
+            margin: 13px 0;
+            width: 100%;
+            border: none;
+
+            input,
+            textarea{
+               padding: 1.3rem 1rem;
+               border-radius: .3rem;
+               box-shadow: 2px 1px 2rem rgb(235, 231, 231);
+               width: 100%;
+               border: none;
+               outline: none;
+               font-size: 15px;
+               color: #8086a7;
+            }
+
+            textarea{
+               resize: vertical;
+               max-height: 19rem;
+               min-height: 10rem;
+               height: 14rem;
+
+               &::placeholder{
+                  font-size: 14.9px;
+                  font-family: sans-serif;
+               }
+            }
+
+            button{
+               display: inline-flex;
+               padding: 16px 21px;
+               justify-content: center;
+               align-items: center;
+               gap: 20px;
+               border-radius: 7px;
+               cursor: pointer;
+               background: transparent;
+               border: 1px solid #6a0dad;
+               color:#6a0dad;
+               font-size: 16px;
+
+               &:hover{
+                  background: #6a0dad;
+                  color: #fff;
+                  transition: ease-in .3s;
+               }
+            }
+         }
+
+         fieldset.flex-field-con{
+            display: flex;
+            gap: 10px;
+         }
+      }
+
+      h1.txt{
+         color: #374151;
+         font-family: "Alef", sans-serif;
+         font-size: 48px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+         text-transform: capitalize;
+
+         @media (max-width: 900px){
+            font-size: 30px;
+         }
+      }
+   }
+
+   /** contact con. right **/
+   div.contact-con-right{
+      background: url(../img/get_intouch_image.png);
+      height: 46rem;
+      width: 32rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (max-width: 1005px){
+         height: 26rem;
+         width: 100%;
+         position: relative;
+         top: 2rem;
+      }
+   }
+}
+
+
+/** address section **/
+section.address{
+   width: 100%;
+   padding-left: 18%;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: space-between;
+
+   @media (max-width: 900px){
+      margin-top: 4rem;
+      padding: 2rem;
+   }
+
+   div.contacts-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      div.contact{
+         
+         img{
+            height: auto;
+
+            @media(max-width: 900px){
+               height: 25px;
+            }
+         }
+
+         h2.contact-title{
+            font-weight: 400;
+            color: #161616e3;
+            font-family: "Alef", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 20px 0;
+         }
+
+         h3.detail{
+            color: #161616e3;
+            font-family: "Alef", sans-serif;
+            font-size: 13.977px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24.907px; /* 131.25% */
+         }
+      }
+   }
+
+}
+
+
+/** client wrapper **/
+div.client-wrap{
+   margin-top: 90px !important;
+
+   /** client logos ***/
+  img.client-logos{
+   width: 80% !important;
+   transform: translateX(10%) !important;
+
+   @media (max-width: 800px){
+      margin: 6px 0;
+   }
+}
+}
+
+/** footer */
+footer.footer{
+   margin-top: 90px;
+   ;
+   @media (max-width: 900px){
+      margin-top: 50px !important;
+   }
+}
+}

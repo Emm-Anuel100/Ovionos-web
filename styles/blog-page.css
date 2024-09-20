@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+   background: #fff !important;
+
+   header {
+      background: transparent !important;
+   }
+
+   /** blog blog landing hero **/
+   section.blog-landing-hero{
+      height: 600px;
+      width: 100%;
+      background: url(../img/blog-landing-hero-image.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      padding: 15rem 4%;
+      bottom: 8.9rem;
+      z-index: -1;
+
+      h1.blog-title{
+         font-family: "Alef", sans-serif;
+         color: #fff;
+         font-size: 45px;
+         font-style: normal;
+         font-weight: 700;
+         text-transform: capitalize;
+         line-height: normal;
+
+         @media (max-width: 900px){
+            font-size: 38px;
+         }
+      }
+
+      h3.sub-title{
+         margin-top: 20px;
+         color: #fff;
+         font-size: 16px;
+      }
+   }
+
+   /** blog story section **/
+   section.flex-story{
+      width: 100%;
+      padding: 0 7%;
+      margin-top: -4rem;
+
+      @media (max-width: 900px){
+         margin-top: -7rem;
+      }
+
+      div.story-wrapper{
+         border-radius: 9.246px;
+         border: 1.249px solid #E2E2E2;
+         background: #fff;
+         box-shadow: 0px 6.246px 4.997px 0px rgba(221, 221, 221, 0.25);
+         display: flex;
+         justify-content: space-between;
+         gap: 40px;
+         align-items: center;
+
+         @media (max-width: 900px){
+            flex-wrap: wrap;
+         }
+
+         div.element-text{
+            width: 38rem;
+            padding-left: 5%;
+            flex-shrink: 1;
+            /* left: 3%; */
+            position: relative;
+
+            @media (max-width: 900px){
+               margin-top: 2.5rem;
+            }
+
+            h1{
+               color: #2D3748;
+               font-family: "Alef", sans-serif;
+               font-size: 40px;
+               font-style: normal;
+               font-weight: 700;
+               margin-bottom: 20px;
+               line-height: normal;
+
+               @media (max-width: 800px){
+                  font-size: 32px;
+               }
+            }
+
+            h3{
+               color:#718096;
+               font-family: "Alef", sans-serif;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 21px; 
+
+               @media (max-width: 800px){
+                  font-size: 14px;
+                  width: 95%;
+               }
+            }
+
+            /** element buttom **/
+            div.element-bottom{
+               position: relative;
+               margin-top: 2.5rem;
+               display: flex;
+               gap: 1.7rem;
+               justify-content: space-between;
+
+               @media (max-width: 900px){
+                  justify-content: flex-start;
+               }
+
+               h4.date{
+                  color: #718096;
+                  font-family: "Inter", sans-serif;
+                  font-optical-sizing: auto;
+                  font-size: 12.99px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+               }
+
+              a.read-more{
+                  color: #2D3748;
+                  font-family: "Inter", sans-serif;
+                  font-optical-sizing: auto;
+                  font-size: 12.99px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+               }
+            }
+         }
+      }
+
+      /*** image in blog story **/
+      img.blog-story-img{
+         width: 40%;
+         height: 17rem;
+         object-fit: cover;
+
+         @media (max-width: 900px){
+            width: 100%;
+         }
+      }
+   }
+
+
+   /** blog cards section **/
+   section.blog-cards{
+      position: relative;
+      margin-top: 4.6rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      padding: 10px 8%;
+
+      @media (max-width: 900px){
+         flex-wrap: wrap;
+         padding: 10px 2%;
+         gap: 1.5rem;
+      }
+
+      /** individual blog cards **/
+      div.card-blog{
+         border-radius: 6.246px;
+         background: #FFF;
+         width: 23rem;
+         box-shadow: 0px 4.997px 4.997px 0px #c0bdbd40;
+
+         @media (max-width: 800px){
+            width: 90%;
+         }
+
+         img.blog-card-img{
+            border-radius: .5rem;
+            width: 100%;
+         }
+
+         div.con-blog-detail{
+            margin-top: 1.5rem;
+            /** padding top, right/left and bottom **/
+            padding: 0 20px 20px; 
+
+            h2.blog-title{
+               color: #2D3748;
+               font-family: "Alef", sans-serif;
+               font-size: 18px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: normal;
+
+               @media (max-width: 800px){
+                  font-size: 16px;
+               }
+            }
+
+            /** blog card detail **/
+            h3.blog-card-detail{
+               color: #718096;
+               font-family: "Alef", sans-serif;
+               font-size: 15px;
+               font-style: normal;
+               margin-top: 12px;
+               font-weight: 400;
+               line-height: 21px; 
+
+               @media (max-width: 800px){
+                  font-size: 13px;
+               }
+            }
+
+            /**card element bottom  **/
+            div.card-element-bottom{
+               position: relative;
+               margin-top: 1.3rem;
+               display: flex;
+               gap: 1.7rem;
+               justify-content: space-between;
+
+               @media (max-width: 900px){
+                  justify-content: flex-start;
+               }
+
+               h4.date{
+                  color: #718096;
+                  font-family: "Inter", sans-serif;
+                  font-optical-sizing: auto;
+                  font-size: 12.99px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+               }
+
+               a.read-more{
+                  color: #2D3748;
+                  font-family: "Inter", sans-serif;
+                  font-optical-sizing: auto;
+                  font-size: 12.99px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+               }
+            }
+         }
+      }
+   }
+
+
+   /*** AI Blog section ***/
+   section.ai-blog{
+      position: relative;
+      margin-top: 4rem !important;
+
+   div.story-wrapper{
+      background: #f8eeff !important;
+      border: none !important;
+   }
+
+   /*** image in blog story **/
+   img.blog-story-img{
+      width: 45%;
+      height: 30rem;
+      object-fit: cover;
+
+      @media (max-width: 900px){
+         height: 20rem !important;
+         width: 100%;
+      }
+   }
+ }
+
+
+ /** see more button with background **/
+ div.see-more-bg-con{
+   display: flex;
+   position: relative;
+   margin-top: 24px;
+   justify-content: right;
+
+ a.see-more-bg{
+   background: #6a0dad;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: 8rem;
+   border-radius: .2rem;
+   justify-content: center;
+   color: #FFF;
+   font-family: "Inter", sans-serif;
+   font-size: 15.986px;
+   font-weight: 500;
+   line-height: normal;
+   padding: 10px 2px;
+   margin-right: 0;
+
+   &:hover{
+      transform: scale(1.03);
+      transition: transform ease-in .4s;
+   }
+ }
+}
+
+
+/** our client **/
+h1.our-client-title{
+   color: #696969;
+   font-family: var(--ovionos-major-headlines-font-family);
+   font-weight: var(--ovionos-major-headlines-font-weight);
+   font-size: 42px;
+   margin-top: 3rem;
+   text-align: center;
+   letter-spacing: var(--ovionos-major-headlines-letter-spacing);
+   line-height: var(--ovionos-major-headlines-line-height);
+   font-style: var(--ovionos-major-headlines-font-style);
+
+   @media (max-width: 800px){
+      font-size: 32px;
+   }
+}
+
+/** client logo section **/
+div.client-logo-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 8%;
+
+   img.client-logo{
+      width: 60%;
+      height: 3.6rem;
+      margin-top: 25px;
+
+      @media (max-width: 800px){
+         width: 100%;
+         height: 2.9rem !important;
+      }
+   }
+ }
+}

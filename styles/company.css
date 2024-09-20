@@ -1,0 +1,676 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+
+header{
+   background: transparent !important;
+   position: relative;
+   bottom: -10px;
+
+   @media (max-width: 800px){
+      background: #4f0088 !important;
+      bottom: 0;
+   }
+}
+
+section.hero{
+   /* z-index: 999; */
+   margin-top: -93px !important;
+   height: 480px !important;
+   background: url(../img/company_image.png) !important;
+   clip-path: none !important;
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   padding: 2rem 22%;
+
+   @media (max-width: 800px){
+      padding: 2rem 2%;
+   }
+
+   .hero-txt{
+      font-family: "PolySans-Slim", Helvetica;
+
+      @media(max-width: 800px){
+         font-size: 15.6px;
+      }
+   }
+
+   @media (max-width: 800px){
+    height: 300px;
+   }  
+
+   .hero-txt{
+      text-transform: uppercase;
+      font-size: 20px;
+      position: relative;
+      margin-top: 132px;
+      text-align: center;
+      color: #eee;
+      font-family: "PolySans-Slim", Helvetica;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: normal;
+
+      @media(max-width: 800px){
+         font-size: 16px;
+      }
+   }
+
+   /** title-2 **/
+   h2{
+      font-family: "Alef", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      position: relative;
+      top: 10px;
+      color: var(--white);
+      font-size: 35px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+
+      @media (max-width: 800px){
+         font-size: 30.2px;
+         width: 100%;
+      }
+   }
+}
+
+
+section.who-we-are-txt{
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   gap: 2rem;
+   margin-top: 8rem;
+   width: 100%;
+   padding: 0 12%;
+   align-items: center;
+
+   @media (max-width: 900px){
+      flex-wrap: wrap;
+      gap: 3rem !important;
+      margin-top: 1rem;
+   }
+
+   div.con-left{
+      @media (max-width: 900px){
+         margin-top: 20px;
+      }
+
+      h1{
+         font-size: 38px;
+         margin-bottom: 1rem;
+         font-family: "PolySans-Slim", Helvetica;
+         font-weight: 500;
+      }
+
+      h2{
+         font-size: 16.3px !important;
+         font-family: "PolySans-Slim", Helvetica;
+         line-height: 23px;
+         color: #686666;
+      }
+   }
+
+
+   div.con-right{
+      z-index: 8888;
+
+      @media (max-width: 900px){
+         width: 400%;
+      }
+   }
+
+   /** image flexed with vector image in page **/
+   div.flex-img{
+      /* width: 280rem; */
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+     @media (max-width: 900px){
+         flex-direction: column;
+         margin-left: -1%;
+     }
+
+      img{
+         position: relative;
+         /* width: 100%; */
+         width: 16rem;
+         height: 25rem;
+      }
+
+      .img-1{
+         position: relative;
+         border-radius: 2rem;
+
+         @media (max-width: 900px){
+            object-fit: cover !important;
+            width: 100% !important;
+         }
+      }
+
+      .img-2{
+         position: relative;
+         bottom: 90px !important;
+         border-radius: 1.9rem;
+         
+         @media (max-width: 900px){
+            object-fit: cover !important;
+            bottom: 0 !important;
+            width: 100% !important;
+         }
+      }
+   }
+
+   /* diamond vector orange image */
+   img.vector-company-diamond{
+      position: absolute;
+      bottom: 4rem !important;
+      left: auto;
+      margin-left: 13rem;
+      margin-bottom: 36px;
+
+      @media (max-width: 900px){
+         bottom: -9rem !important;
+         left: 50%;
+         height: 90px;
+      }
+   }
+}
+
+/** vector image large */
+img.vector-diamond-lg{
+   position: relative;
+   z-index: 7777;
+   margin-top: -36.5rem !important;
+   margin-left: 45rem;
+   /* width: 200px; */
+   height: 800px;
+
+   @media (max-width: 900px){
+      display: none;
+   }
+}
+
+
+/**** vision, values and core values section *****/
+section.mission-con{
+   width: 100%;
+   background: #e2f6ff;
+   padding: 2rem 7%;
+   position: relative;
+   /* margin-top: 8rem; */
+   margin-top: -4.5rem;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   /* grid-template-columns: 1fr 1fr 1fr; */
+   /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+   justify-content: center;
+
+   @media (max-width: 900px){
+      margin-top: 5rem; 
+      flex-direction: column;
+   }
+
+
+  /*** section-x1 **/
+  div.section-x1{
+   width: 4rem; 
+   min-width: 4rem;
+   height: auto;
+   /*max-width: 300px; */
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 100px;
+
+   @media (max-width: 900px){
+      flex: 1 1 100px;
+      width: 105% ;
+   }
+
+   img.com-img{
+      height: 14rem;
+      width: 94.8%;
+      flex: 1 1 100px;
+
+      @media (max-width: 900px){
+         object-fit: cover;
+         border-radius: 20px;
+      }
+   }
+
+   &:hover{
+      transform: translateY(-10px);
+      transition: ease-in .2s;
+   }
+  }
+
+
+  /** second column in section **/
+  div.section-x2{
+   background: #fff;
+   padding: 2rem;
+   width: 4rem;
+   min-width: 4rem;
+   border-radius: .6rem;
+   width: 23.8rem;
+   flex: 1 1 100px;
+
+   @media (max-width: 900px){
+      flex: 1 1 100px;
+      width: 100%;
+   }
+
+   &:hover{
+      transform: translateY(-10px);
+      transition: ease-in .2s;
+   }
+
+   div.flex-icon{
+      gap: 20px;
+   }
+
+   div.title-h{
+      font-weight: 600;
+      color: #636161;
+      margin-top: 2rem;
+      font-size: 15px;
+      font-family: "PolySans-Slim", Helvetica;
+   }
+
+   div.lists {
+      margin-top: 2rem;
+
+      li{
+         list-style: disc !important;
+         font-family: "PolySans-Slim", Helvetica;
+         font-size: 13.7px;
+         line-height: 32px;
+         color: #5c5b5b;
+
+         &::marker{
+            color: #8bd2f3;
+            font-size: 2rem;;
+         }
+      }
+   }
+  }
+  
+
+/** First and third column in mission section **/
+  div.con-sec{
+   background: #fff;
+   padding: 3rem 2.5rem 1.5rem 2.5rem;
+   margin: 20px 0;
+   border-radius: .6em;
+   width: 95%;
+}
+
+  /*** Items in card ***/
+  div.flex-icon{
+   display: flex;
+   align-items: center;
+   gap: 120px;
+
+   @media (max-width: 1100px){
+      gap: 50px;
+   }
+
+   h1{
+      font-size: 20px;
+      font-weight: 700;
+      color: #424242;
+      font-family: "PolySans-Slim", Helvetica;
+   }
+
+   img{
+      height: 2.6rem;
+   }
+   }
+
+   div.content{
+      margin-top: 2rem;
+      color: gray;
+      line-height: 23px;
+      font-size: 14px;
+      font-family: "PolySans-Slim", Helvetica;  
+   }
+
+/** third section in page **/
+div.col-3{
+   flex-direction: column-reverse !important;
+   bottom: 18px;
+   position: relative;
+
+   @media (max-width: 900px){
+      bottom: -1px !important;
+   }
+
+   img.com-img{
+      margin-left: 4px;
+
+      @media (max-width: 900px){
+         object-fit: cover;
+         border-radius: 20px;
+      }
+   }
+}
+}  
+
+/** thin orange image */
+img.thin-vector{
+   position: absolute;
+   height: 4.5rem;
+   margin-top: 28rem;
+   margin-left: 81%;
+
+   @media (max-width: 900px){
+      margin-left: 70%;
+   }
+}
+
+/** the team */
+section.the-team{
+   position: relative;
+   background: #fff;
+   width: 100%;
+   padding: 4.2rem 7%;
+
+   img.solid-green-diamond{
+      position: absolute;
+      margin-left: 7rem;
+
+      @media (max-width: 800px){
+         height: 2.5rem;
+         margin-left: 3rem;
+      }
+   }
+
+   h1.team-txt{
+      position: relative;
+      font-family: "Alef", sans-serif;
+      text-align: center;
+      font-size: 37px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: #413f3f;
+
+      @media (max-width: 800px){
+         font-size: 29px;
+      }
+   }
+
+
+
+   /** team profile wrapper **/
+   section.team-profile{
+      width: 100%;
+      margin-top: 4.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+
+      @media (max-width: 800px){
+         gap: 0;
+      }
+
+      div.team-con{
+         width: 24rem;
+
+         img.staff-img{
+            width: 100%;
+            height: 18rem;
+            object-fit: cover;
+            border-radius: .3rem;
+
+            /* &:hover{
+               filter: brightness(50%);
+            } */
+         }
+
+         h3.name{
+            font-family: "Alef", sans-serif;
+            font-size: 16.4px;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-top: 1rem;
+         }
+
+         h2.profile-details{
+            position: relative;
+            font-family: "Alef", sans-serif;
+            font-size: 16.4px;
+            left: 16px;
+            width: 92%;
+            visibility: hidden;
+            bottom: 170px;
+            line-height: 19px;
+            color: #eee;
+         }
+      }
+   }
+
+   /** profile section styles for mobile **/
+   div.profile-2,
+   div.profile-3,
+   div.profile-4,
+   div.profile-5,
+   div.profile-6{
+      @media (max-width: 900px){
+         position: relative;
+         margin-bottom: -4.5rem !important;
+         bottom: 5.5rem !important;
+      }
+   }
+
+   /** set filter when hovered on profile ***/
+   div.team-con:hover img.staff-img{
+      filter: brightness(40%);
+      transition: filter .6s;
+   }
+
+   /*** make details visible when hoverd **/
+   .team-con:hover > .profile-details {
+      visibility: visible !important;
+      bottom: 200px !important;
+      transition: bottom ease-in .3s;
+   }
+}
+
+/** career section **/
+section.careers{
+   position: relative;
+   padding: 3rem 8%;
+   background: #e2f6ff;
+   bottom: 8rem;
+   height: auto;
+
+   div.item{
+      background: url(../img/careers_background_image.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 15%;
+      border-radius: 1.5rem;
+      color: #eee;
+
+      /** career title **/
+      h1.career-title{
+         font-size: 40px;
+         margin-bottom: 1rem;
+         color: #eee !important;
+         font-weight: 700;
+         font-family: "Alef", sans-serif;
+
+         @media (max-width: 800px){
+            font-size: 30px;
+         }
+      }
+
+      h3.career-detail{
+         font-size: 17px;
+         line-height: 22px;
+         text-align: center;
+         font-family: "Alef", sans-serif;
+
+         @media (max-width: 800px){
+            font-size: 15.5px;
+         }
+      }
+   }
+
+
+   /** why work with Ovionos section **/
+   div.work-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10%;
+
+      @media (max-width: 800px){
+         padding: 0 1%;
+      }
+
+      h1.work-title{
+         font-size: 40px;
+         font-family: "Alef", sans-serif;
+         margin-top: 4.7rem;
+         font-weight: 600;
+         color: #374151;
+         text-transform: capitalize;
+         text-align: center;
+      }
+   
+      h3.work-detail{
+         margin-top: 2rem;
+         text-align: center;
+         font-family: "PolySans-Slim", Helvetica;
+         color: #202d36;
+         line-height: 25.5px;
+         font-size: 17px;
+         width: 80%;
+      }
+   }
+
+
+  /** work flex section **/
+  div.work-card-flex{
+   width: 100%;
+   padding: 0 2%;
+   margin-top: 3.8rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1.5rem;
+
+   /** work cards **/
+   div.work-card{
+      background: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      width: 20rem;
+
+      @media (max-width: 900px){
+         width: 120%;
+      }
+
+      div.flex-vector{
+         display: flex;
+         align-items: center;
+         gap: 1rem;
+         margin-bottom: 1.2rem;
+
+         h4{
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #374151;
+            line-height: normal;
+            font-family: "Alef", sans-serif;
+         }
+      }
+
+      /** work card detail **/
+      h5{
+         font-size: 13.5px;
+         line-height: 18px;
+         color: 374151;
+         color: #666262;
+         font-weight: 200;
+         font-family: "Alef", sans-serif;
+      }
+   }
+  }
+
+
+  /** join our team btn **/
+  div.join-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   a.join-btn{
+      border-radius: 8px;
+      background: #6a0dad;
+      margin-top: 4.5rem;
+      color: #fff;
+      font-family: "Alef", sans-serif;
+      padding: 15px 26px;
+
+      &:hover{
+         transform: scale(1.05);
+         transition: transform ease-in .3s;
+      }
+   }
+  }
+}
+
+
+/** our client **/
+h1.our-client-title{
+   color: #696969;
+   font-family: var(--ovionos-major-headlines-font-family);
+   font-weight: var(--ovionos-major-headlines-font-weight);
+   font-size: 42px;
+   text-align: center;
+   letter-spacing: var(--ovionos-major-headlines-letter-spacing);
+   line-height: var(--ovionos-major-headlines-line-height);
+   font-style: var(--ovionos-major-headlines-font-style);
+
+   @media (max-width: 800px){
+      font-size: 32px;
+   }
+}
+
+/** client logo section **/
+div.client-logo-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 8%;
+
+   img.client-logo{
+      width: 60%;
+      height: 3.6rem;
+      margin-top: 25px;
+
+      @media (max-width: 800px){
+         width: 100%;
+         height: 2.9rem !important;
+      }
+   }
+}
+
+
+
+
+

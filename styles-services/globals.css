@@ -1,0 +1,49 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/65410c35416ace0412c89137/fonts/gotham-bold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "PolySans-Bulky";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6517feaa059508e446b20ec6/fonts/polysans-bulky.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/656791b77f52524f6a44afda/fonts/helvetica-regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "PolySans-Neutral";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/649a647c214f59ca32e6429a/fonts/polysans-neutral.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/61937676c1b2ee0850725a54/fonts/helvetica-bold.otf")
+    format("opentype");
+}
