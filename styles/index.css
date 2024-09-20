@@ -1,3 +1,4 @@
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:700|Montserrat:700");
 
@@ -1093,4 +1094,5 @@ div.sec{
    @media (max-width: 800px){
       font-size: 12px;
    }
+
 }
